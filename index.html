@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231dbf73'/%3E%3Ctext x='50' y='60' font-size='48' text-anchor='middle' fill='white' font-family='Arial'%3ESH%3C/text%3E%3C/svg%3E">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saleheen Hamid | PHP & Laravel Expert</title>
@@ -46,12 +47,35 @@
 
     .card img.logo { height: 40px; margin-bottom: 0.5rem; }
 
+    section.contact.grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* Default: 3 columns (laptop) */
+      gap: 20px; /* Optional spacing between items */
+      padding: 20px;
+    }
+
+    /* Tablets (e.g., width < 1024px) */
+    @media (max-width: 1024px) {
+     section.contact.grid-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Mobile phones (e.g., width < 600px) */
+    @media (max-width: 600px) {
+      section.contact.grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
     .contact { text-align: center; margin-top: 2rem; }
     .contact a { margin: 0.5rem; padding: 0.7rem 1.2rem; color: white; border-radius: 5px; text-decoration: none; font-weight: 600; }
     .contact a.wa {background: #1bd641; }
     .contact a.upw {background: #6fda44; }
     .contact a.fvr {background: #00b22d; }
     .contact a.email {background: #f04b3f; }
+    .contact a.linkedin{ background: #fff; border: 1px solid #0077b7; color: #0177b7; }
 
     footer { text-align: center; padding: 1rem; font-size: 0.9rem; background: #1dbf73; color: #fff; margin-top: 2rem; }
 
@@ -148,7 +172,7 @@
   </div>
 </section>
 
-<section class="section contact">
+<section class="section contact grid-container">
   <h2>📞 Contact Me</h2>
   <a class="wa" href="https://wa.me/923124209686" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="height:20px; vertical-align:middle; margin-right:8px;">
@@ -166,11 +190,11 @@
     <img src="https://cdn.worldvectorlogo.com/logos/upwork-1.svg" alt="Upwork" style="height:20px; vertical-align:middle; margin-right:8px;">
     Hire on Upwork
   </a>
-  <a href="https://www.linkedin.com/in/saleheenhamid" target="_blank">
+  <a class="linkedin" href="https://www.linkedin.com/in/saleheenhamid" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="height:20px; vertical-align:middle; margin-right:8px;">
     Connect on LinkedIn
   </a>
-  
+
 </section>
 
 
