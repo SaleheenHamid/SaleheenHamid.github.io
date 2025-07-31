@@ -26,17 +26,36 @@
     .section { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
     .section h2 { font-size: 1.8rem; margin-bottom: 1rem; text-align: center; }
 
-    .gigs, .experience, .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-    .card { background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: 0.3s; }
+    .gigs, .experience, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
     .card:hover { transform: translateY(-5px); }
     .card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
     .card p { font-size: 0.95rem; color: #555; }
     .card a { display: inline-block; margin-top: 0.8rem; padding: 0.5rem 1rem; background: #1dbf73; color: white; border-radius: 5px; text-decoration: none; font-size: 0.9rem; }
 
+    .card img.logo { height: 40px; margin-bottom: 0.5rem; }
+
     .contact { text-align: center; margin-top: 2rem; }
     .contact a { margin: 0.5rem; padding: 0.7rem 1.2rem; background: #1dbf73; color: white; border-radius: 5px; text-decoration: none; font-weight: 600; }
 
     footer { text-align: center; padding: 1rem; font-size: 0.9rem; background: #eaeaea; margin-top: 2rem; }
+
+    @media (max-width: 640px) {
+      .gigs, .experience, .projects {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -66,7 +85,7 @@
       <a href="https://www.fiverr.com/saleheenhamid/fix-or-integrate-payment-gateway-api-in-php-laravel" target="_blank">View Gig</a>
     </div>
     <div class="card">
-      <h3>Secure and optimize Laravel code</h3>
+      <h3>Secure and optimize code brilliant directories website</h3>
       <p>I will clean up, secure, and optimize your Laravel codebase.</p>
       <a href="https://www.fiverr.com/saleheenhamid/debug-and-secure-laravel-code-and-database" target="_blank">View Gig</a>
     </div>
@@ -77,18 +96,22 @@
   <h2>🧠 Experience</h2>
   <div class="experience">
     <div class="card">
+      <img class="logo" src="https://www.brilliantdirectories.com/hubfs/BD_Logo_Marketing_Blue.png" alt="Brilliant Directories Logo">
       <h3>Metaviz (2024–Present)</h3>
       <p>Customized Brilliant Directories, developed plugins, and integrated APIs for advanced directory-based platforms.</p>
     </div>
     <div class="card">
+      <img class="logo" src="https://techabout.com/wp-content/uploads/2018/09/logo.png" alt="TechAbout Logo">
       <h3>TechAbout (Astute Solutions)</h3>
       <p>Developed WordPress plugins and themes, enhanced site functionality, and worked with modern PHP frameworks.</p>
     </div>
     <div class="card">
+      <img class="logo" src="https://pbit.gop.pk/sites/default/files/pbit-logo.png" alt="PBIT Logo">
       <h3>PBIT (Govt. Org)</h3>
       <p>Managed web portals, developed with Drupal, and analyzed social engagement.</p>
     </div>
     <div class="card">
+      <img class="logo" src="https://hunchautomation.com/wp-content/uploads/2022/06/logo_hunch.png" alt="HUNCH Automation Logo">
       <h3>HUNCH Automation</h3>
       <p>Developed web apps using PHP, MySQL, JavaScript, and implemented dynamic front-ends.</p>
     </div>
