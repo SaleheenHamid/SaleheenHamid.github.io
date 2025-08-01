@@ -90,6 +90,97 @@
       font-size: 0.9rem;
       font-weight: 600;
     }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    @media only screen and (min-width: 920px){
+      .grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  }
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #1dbf73;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .card img.logo {
+      height: 40px;
+      margin-bottom: 0.8rem;
+    }
+
+    .contact-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+
+    .contact-links a {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+      padding: 0.75rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      color: white;
+    }
+
+    .contact-links img {
+      height: 22px;
+      margin-right: 10px;
+    }
+
+    .wa { background: #1bd641; }
+    .email { background: #f04b3f; }
+    .fvr { background: #00b22d; }
+    .upw { background: #6fda44; }
+    .linkedin { background: white; color: #0177b7 !important; border: 1px solid #0077b7; }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #1dbf73;
+      color: #fff;
+      margin-top: 3rem;
+    }
+
+
   </style>
 </head>
 <body>
