@@ -254,7 +254,7 @@
   </section>
 
 
-<section id="gigs" class="section">
+<section id="gigs" class="section personal_info">
   <h2>💼 Fiverr Gigs</h2>
   <div class="grid">
     <div class="card">
@@ -394,6 +394,20 @@
   window.addEventListener("scroll", highlightNav);
   window.addEventListener("resize", highlightNav);
 </script>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const showSection = urlParams.get('personal_info');
+
+  // If personal_info is not "1", remove all elements with class "personal_info"
+  if (showSection !== '1') {
+    document.querySelectorAll('.personal_info').forEach(el => el.remove());
+
+    // Also remove nav links that point to #personal_info
+    document.querySelectorAll('nav a[href="#personal_info"]').forEach(link => link.remove());
+  }
+</script>
+
 
 
 </body>
