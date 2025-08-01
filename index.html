@@ -345,10 +345,18 @@
 <script>
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll("nav a");
+  const footer = document.querySelector("footer");
 
-  window.addEventListener("scroll", () => {
+  function isFooterInView() {
+    const rect = footer.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+  }
+
+  function getCurrentSection() {
     let current = "";
-
     sections.forEach(section => {
       const sectionTop = section.offsetTop - 100;
       const sectionHeight = section.offsetHeight;
@@ -356,6 +364,19 @@
         current = section.getAttribute("id");
       }
     });
+    return current;
+  }
+
+  function highlightNav() {
+    let current = getCurrentSection();
+
+    // Check if screen is medium or large (greater than 767px)
+    const isMediumOrLarger = window.innerWidth > 767;
+
+    // If footer is in view and not already in contact section, and screen is medium+
+    if (isMediumOrLarger && isFooterInView() && current !== "contact") {
+      current = "contact";
+    }
 
     navLinks.forEach(link => {
       link.classList.remove("active");
@@ -363,8 +384,12 @@
         link.classList.add("active");
       }
     });
-  });
+  }
+
+  window.addEventListener("scroll", highlightNav);
+  window.addEventListener("resize", highlightNav);
 </script>
+
 
 </body>
 </html>
