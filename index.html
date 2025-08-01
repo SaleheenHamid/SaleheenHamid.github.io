@@ -18,6 +18,24 @@
       color: #333;
     }
 
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1dbf73;
+      font-weight: 600;
+    }
+
     header {
       background: #1dbf73;
       color: white;
@@ -57,100 +75,67 @@
       text-align: center;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    @media only screen and (min-width: 920px){
-      .grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  }
-    }
-
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background: #1dbf73;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-
-    .card img.logo {
-      height: 40px;
-      margin-bottom: 0.8rem;
-    }
-
-    .contact-links {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .contact-links a {
+    .badges {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
       justify-content: center;
-      padding: 0.75rem;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 6px;
-      color: white;
     }
 
-    .contact-links img {
-      height: 22px;
-      margin-right: 10px;
-    }
-
-    .wa { background: #1bd641; }
-    .email { background: #f04b3f; }
-    .fvr { background: #00b22d; }
-    .upw { background: #6fda44; }
-    .linkedin { background: white; color: #0177b7 !important; border: 1px solid #0077b7; }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
+    .badge {
+      background: #e5f9ee;
+      color: #1dbf73;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
       font-size: 0.9rem;
-      background: #1dbf73;
-      color: #fff;
-      margin-top: 3rem;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
-  
-<header>
-  <img src="https://media.licdn.com/dms/image/v2/C4D03AQEHLbeUxOjB4Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1555329431339?e=1756944000&v=beta&t=lnXQnmnSTTp8GVXjD8nrGfRjBLgA_3W3FZj5kJmQNBM" alt="Saleheen Hamid">
-  <h1>Saleheen Hamid</h1>
-  <p>Full Stack Developer | PHP, Laravel, CodeIgniter, WordPress, Brilliant Directories, API Integration</p>
-</header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#gigs">Gigs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="your-image.jpg" alt="Saleheen Hamid">
+    <h1>Saleheen Hamid</h1>
+    <p>Full Stack Developer | PHP, Laravel, Codeigniter, APIs, Brilliant Directories</p>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p style="max-width: 800px; margin: auto; font-size: 1.05rem; text-align: center;">
+      I'm a dedicated Full Stack Developer with 5+ years of experience specializing in PHP frameworks like Laravel and CodeIgniter, CMS customization (Brilliant Directories, WordPress), and integrating third-party APIs, payment gateways, and hosting/server management. My goal is to deliver fast, secure, and scalable web applications tailored to your business needs.
+    </p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="badges">
+      <span class="badge">PHP</span>
+      <span class="badge">Laravel</span>
+      <span class="badge">CodeIgniter</span>
+      <span class="badge">MySQL</span>
+      <span class="badge">HTML</span>
+      <span class="badge">CSS</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">Brilliant Directories</span>
+      <span class="badge">WordPress</span>
+      <span class="badge">REST APIs</span>
+      <span class="badge">Payment Gateways</span>
+      <span class="badge">Mail APIs</span>
+      <span class="badge">Linux Server</span>
+      <span class="badge">Ubuntu</span>
+      <span class="badge">WHM</span>
+      <span class="badge">cPanel</span>
+      <span class="badge">VPS Hosting</span>
+    </div>
+  </section>
+
 
 <section class="section">
   <h2>💼 Fiverr Gigs</h2>
