@@ -49,6 +49,12 @@
       border-radius: 2px;
     }
 
+    @media only screen and (max-width: 600px){
+      nav{
+        display: none;
+      }
+    }
+
     header {
       background: #1dbf73;
       color: white;
@@ -344,7 +350,7 @@
     let current = "";
 
     sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
+      const sectionTop = section.offsetTop - 100;
       const sectionHeight = section.offsetHeight;
       if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
         current = section.getAttribute("id");
