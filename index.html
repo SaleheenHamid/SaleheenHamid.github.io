@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saleheen Hamid | PHP & Laravel Expert</title>
-  <meta name="description" content="Full Stack Developer specializing in PHP, Laravel, Codeigniter, APIs, and Brilliant Directories.">
+  <meta name="description" content="Full-stack developer with 9+ years in PHP, Laravel, React, WordPress, and REST APIs. Live work includes Glexara, Pipetal, and the Punjab Board of Investment and Trade portal.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231dbf73'/%3E%3Ctext x='50' y='60' font-size='48' text-anchor='middle' fill='white' font-family='Arial'%3ESH%3C/text%3E%3C/svg%3E">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -29,7 +29,8 @@
       padding: 1rem 2rem;
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      flex-wrap: wrap;
+      gap: 0.75rem 2rem;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -55,9 +56,11 @@
     }
 
     @media only screen and (max-width: 600px){
-      nav{
-        display: none;
+      nav {
+        gap: 0.65rem 1rem;
+        padding: 0.75rem 1rem;
       }
+      nav a { font-size: 0.92rem; }
     }
 
     header {
@@ -69,9 +72,12 @@
 
     header img {
       width: 120px;
+      height: 120px;
       border-radius: 50%;
       border: 3px solid white;
       margin-top: 1rem;
+      object-fit: cover;
+      background: #fff;
     }
 
     header h1 {
@@ -122,7 +128,7 @@
     }
 
     @media only screen and (min-width: 920px){
-      .grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  }
+      .grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
     }
 
     .card {
@@ -170,7 +176,6 @@
       margin-top: 2rem;
     }
 
-
     .contact-links a {
       display: flex;
       align-items: center;
@@ -204,7 +209,6 @@
       margin-top: 3rem;
     }
 
-
   </style>
 </head>
 <body>
@@ -218,31 +222,29 @@
   </nav>
 
   <header>
-    <img src="https://media.licdn.com/dms/image/v2/C4D03AQEHLbeUxOjB4Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1555329431339?e=1756944000&v=beta&t=lnXQnmnSTTp8GVXjD8nrGfRjBLgA_3W3FZj5kJmQNBM" alt="Saleheen Hamid">
+    <img src="assets/avatar.svg" alt="Saleheen Hamid">
     <h1>Saleheen Hamid</h1>
-    <p>Full Stack Developer | PHP, Laravel, Codeigniter, APIs, Brilliant Directories</p>
+    <p>Full Stack Developer | PHP, Laravel, React, WordPress, APIs</p>
   </header>
 
   <section id="about" class="section">
     <h2>About Me</h2>
     <p style="max-width: 800px; margin: auto; font-size: 1.05rem; text-align: center;">
-      I'm a dedicated Full Stack Developer with 5+ years of experience specializing in PHP frameworks like Laravel and CodeIgniter, CMS customization (Brilliant Directories, WordPress), and integrating third-party APIs, payment gateways, and hosting/server management. My goal is to deliver fast, secure, and scalable web applications tailored to your business needs.
+      I'm a full-stack developer with 9+ years shipping PHP applications, REST APIs, and third-party integrations across Laravel, React, CodeIgniter, WordPress, Brilliant Directories, and Drupal. Recent production work includes Glexara, a cloud accounting and inventory ERP, and Pipetal, an ERP for steel pipe factories, plus the official portal for the Punjab Board of Investment and Trade. I deliver fast, secure, and scalable web applications.
     </p>
   </section>
 
   <section id="skills" class="section">
   <h2>Skills</h2>
   <div class="badges">
-    <!-- Core Web & Backend -->
     <span class="badge">PHP</span>
     <span class="badge">Core PHP</span>
     <span class="badge">Laravel</span>
+    <span class="badge">React</span>
     <span class="badge">CodeIgniter</span>
     <span class="badge">HMVC</span>
     <span class="badge">MySQL</span>
     <span class="badge">MySQLi</span>
-
-    <!-- Frontend -->
     <span class="badge">HTML</span>
     <span class="badge">CSS</span>
     <span class="badge">JavaScript</span>
@@ -250,14 +252,10 @@
     <span class="badge">Bootstrap</span>
     <span class="badge">Tailwind CSS</span>
     <span class="badge">JS Charts</span>
-
-    <!-- CMS & Platforms -->
     <span class="badge">WordPress</span>
     <span class="badge">Brilliant Directories</span>
     <span class="badge">Drupal</span>
-     <span class="badge">OpenCart</span>
-
-    <!-- APIs & Services -->
+    <span class="badge">OpenCart</span>
     <span class="badge">REST APIs</span>
     <span class="badge">SOAP APIs</span>
     <span class="badge">Third-party Integrations</span>
@@ -268,15 +266,11 @@
     <span class="badge">Payment Gateways</span>
     <span class="badge">Mail APIs</span>
     <span class="badge">Webhook Handling</span>
-
-    <!-- CRM, Automation & Integrations -->
     <span class="badge">GoHighLevel (GHL)</span>
     <span class="badge">Zoho CRM</span>
     <span class="badge">Zapier</span>
     <span class="badge">IDX Integration</span>
     <span class="badge">Odoo</span>
-
-    <!-- DevOps & Hosting -->
     <span class="badge">Linux Server</span>
     <span class="badge">Ubuntu</span>
     <span class="badge">cPanel</span>
@@ -286,21 +280,15 @@
     <span class="badge">Amazon S3</span>
     <span class="badge">DNS Setup</span>
     <span class="badge">SSL Configuration</span>
-
-    <!-- Tools -->
     <span class="badge">Git</span>
     <span class="badge">GitHub</span>
     <span class="badge">Figma to HTML</span>
     <span class="badge">Postman</span>
-
-    <!-- Bonus -->
     <span class="badge">SEO Basics</span>
     <span class="badge">cURL</span>
     <span class="badge">AJAX</span>
   </div>
 </section>
-
-
 
 <section id="gigs" class="section personal_info">
   <h2>💼 Fiverr Gigs</h2>
@@ -308,22 +296,22 @@
     <div class="card">
       <h3>Fix PHP, Laravel, HTML, CSS bugs fast</h3>
       <p>I will debug and fix your web issues quickly and professionally.</p>
-      <a href="https://www.fiverr.com/saleheenhamid/fix-php-laravel-html-css-bugs-in-your-website-fast" target="_blank">View Gig</a>
+      <a href="https://www.fiverr.com/saleheenhamid/fix-php-laravel-html-css-bugs-in-your-website-fast" target="_blank" rel="noopener">View Gig</a>
     </div>
     <div class="card">
       <h3>Integrate any REST or webhook API</h3>
       <p>I will integrate third-party APIs into your PHP or Laravel project.</p>
-      <a href="https://www.fiverr.com/saleheenhamid/integrate-any-rest-webhook-or-custom-api-into-php-or-laravel" target="_blank">View Gig</a>
+      <a href="https://www.fiverr.com/saleheenhamid/integrate-any-rest-webhook-or-custom-api-into-php-or-laravel" target="_blank" rel="noopener">View Gig</a>
     </div>
     <div class="card">
       <h3>Fix payment gateway issues</h3>
       <p>Having issues with Stripe, PayPal or others? I’ll fix them fast.</p>
-      <a href="https://www.fiverr.com/saleheenhamid/fix-or-integrate-payment-gateway-api-in-php-laravel" target="_blank">View Gig</a>
+      <a href="https://www.fiverr.com/saleheenhamid/fix-or-integrate-payment-gateway-api-in-php-laravel" target="_blank" rel="noopener">View Gig</a>
     </div>
     <div class="card">
-      <h3>Brilliant Directories Expert</h3>
-      <p>Customize templates, fix bugs, and build new features in Brilliant Directories.</p>
-      <a href="https://www.fiverr.com/saleheenhamid/debug-and-secure-laravel-code-and-database" target="_blank">View Gig</a>
+      <h3>Debug and secure Laravel code</h3>
+      <p>I will review Laravel code and the database, then fix security and stability issues.</p>
+      <a href="https://www.fiverr.com/saleheenhamid/debug-and-secure-laravel-code-and-database" target="_blank" rel="noopener">View Gig</a>
     </div>
   </div>
 </section>
@@ -333,23 +321,27 @@
   <div class="grid">
     <div class="card">
       <img class="logo" src="logo/metaviz_tech_logo.jpg" alt="Metaviz Tech Logo">
-      <h3>Metaviz (2024–Present)</h3>
-      <p>Customized Brilliant Directories, developed plugins, and integrated APIs.</p>
+      <h3>Metaviz (Sep 2024–Present)</h3>
+      <p>Full-stack Laravel and React work: ERP and CRM features, Brilliant Directories plugins, and API integrations.</p>
     </div>
     <div class="card">
       <img class="logo" src="logo/techabout_logo.jpg" alt="TechAbout Logo">
-      <h3>TechAbout (Astute Solutions)</h3>
-      <p>Built WordPress themes and plugins, optimized PHP backend performance.</p>
+      <h3>TechAbout (Jun 2024–Sep 2024)</h3>
+      <p>Customized WordPress themes and built plugins for client requirements.</p>
+    </div>
+    <div class="card">
+      <h3>Astute Solutions (Jan 2022–Jun 2024)</h3>
+      <p>PHP, Laravel, and CodeIgniter applications, REST APIs, payment and KYC integrations, and AWS/Linux deployments.</p>
     </div>
     <div class="card">
       <img class="logo" src="logo/PBIT.png" alt="PBIT Logo">
-      <h3>PBIT (Govt. Org)</h3>
-      <p>Managed Drupal portals, built APIs, and handled digital engagement.</p>
+      <h3>PBIT (Nov 2017–Jan 2022)</h3>
+      <p>Led the Drupal portal for the Punjab Board of Investment and Trade, including APIs and digital engagement.</p>
     </div>
     <div class="card">
       <img class="logo" src="logo/hunch_automation_logo.jpg" alt="Hunch Logo">
-      <h3>HUNCH Automation</h3>
-      <p>Created full-stack web apps using PHP, MySQL, and modern JS.</p>
+      <h3>HUNCH Automation (Nov 2015–Oct 2017)</h3>
+      <p>Built PHP/MySQL web apps and responsive interfaces with JavaScript and jQuery.</p>
     </div>
   </div>
 </section>
@@ -358,24 +350,34 @@
   <h2>🚀 Projects</h2>
   <div class="grid">
     <div class="card">
+      <h3>Glexara</h3>
+      <p>Cloud ERP for accounting, inventory, purchases, sales, and multi-company operations.</p>
+      <a href="https://glexara.com" target="_blank" rel="noopener">Visit Site</a>
+    </div>
+    <div class="card">
+      <h3>Pipetal</h3>
+      <p>ERP for steel pipe factories: inventory, production, sales, HR, finance, and multi-branch reporting.</p>
+      <a href="https://pipetal.com" target="_blank" rel="noopener">Visit Site</a>
+    </div>
+    <div class="card">
+      <h3>Green Earth Properties</h3>
+      <p>Real estate site for housing-society reports, market updates, and policy analysis.</p>
+      <a href="https://greenearthproperties.pk" target="_blank" rel="noopener">Visit Site</a>
+    </div>
+    <div class="card">
       <h3>PBIT Official Website</h3>
-      <p>Built the official web portal for Punjab Board of Investment and Trade.</p>
-      <a href="https://pbit.gop.pk" target="_blank">Visit Site</a>
+      <p>Official web portal for the Punjab Board of Investment and Trade.</p>
+      <a href="https://pbit.gop.pk" target="_blank" rel="noopener">Visit Site</a>
     </div>
     <div class="card">
       <h3>My Gym Rewards</h3>
-      <p>Built a platform to reward gym goers for their efforts.</p>
-      <a href="https://www.mygymrewards.com" target="_blank">Visit Site</a>
+      <p>Platform for gym activity tracking and rewards.</p>
+      <a href="https://www.mygymrewards.com" target="_blank" rel="noopener">Visit Site</a>
     </div>
     <div class="card">
       <h3>GSM Fastest</h3>
-      <p>End-to-end development of a GSM unlocking services platform.</p>
-      <a href="https://gsmfastest.com" target="_blank">Visit Site</a>
-    </div>
-    <div class="card">
-      <h3>Masa Food</h3>
-      <p>Developed a food delivery website for a Greek restaurant.</p>
-      <a href="https://masafood.gr" target="_blank">Visit Site</a>
+      <p>GSM services platform, built end to end.</p>
+      <a href="https://gsmfastest.com" target="_blank" rel="noopener">Visit Site</a>
     </div>
   </div>
 </section>
@@ -383,20 +385,27 @@
 <section id="contact" class="section">
   <h2>📞 Contact Me</h2>
   <div class="contact-links">
-    <a class="wa" href="https://wa.me/923124209686" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp"> WhatsApp</a>
+    <a class="wa" href="https://wa.me/923124209686" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp"> WhatsApp</a>
     <a class="email" href="mailto:saleheen.hamid@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"> Email</a>
-    <a class="fvr personal_info" href="https://www.fiverr.com/saleheenhamid" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/fiverr-1.svg" alt="Fiverr"> Fiverr</a>
-    <a class="upw personal_info" href="https://upwork.com/freelancers/saleheenhamid" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/upwork-1.svg" alt="Upwork"> Upwork</a>
-    <a class="linkedin" href="https://www.linkedin.com/in/saleheenhamid" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> LinkedIn</a>
+    <a class="fvr personal_info" href="https://www.fiverr.com/saleheenhamid" target="_blank" rel="noopener"><img src="https://cdn.worldvectorlogo.com/logos/fiverr-1.svg" alt="Fiverr"> Fiverr</a>
+    <a class="upw personal_info" href="https://upwork.com/freelancers/saleheenhamid" target="_blank" rel="noopener"><img src="https://cdn.worldvectorlogo.com/logos/upwork-1.svg" alt="Upwork"> Upwork</a>
+    <a class="linkedin" href="https://www.linkedin.com/in/saleheenhamid" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> LinkedIn</a>
   </div>
 </section>
 
 <footer>
-  &copy; 2025 Saleheen Hamid. All rights reserved.
+  &copy; 2026 Saleheen Hamid. All rights reserved.
 </footer>
 
 <script>
-  const sections = document.querySelectorAll("section");
+  const urlParams = new URLSearchParams(window.location.search);
+  const showSection = urlParams.get('personal_info');
+
+  if (showSection !== '1') {
+    document.querySelectorAll('.personal_info').forEach(el => el.remove());
+    document.querySelectorAll('nav a[href="#gigs"], nav a[href="#personal_info"]').forEach(link => link.remove());
+  }
+
   const navLinks = document.querySelectorAll("nav a");
   const footer = document.querySelector("footer");
 
@@ -410,7 +419,7 @@
 
   function getCurrentSection() {
     let current = "";
-    sections.forEach(section => {
+    document.querySelectorAll("section").forEach(section => {
       const sectionTop = section.offsetTop - 100;
       const sectionHeight = section.offsetHeight;
       if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
@@ -422,11 +431,8 @@
 
   function highlightNav() {
     let current = getCurrentSection();
-
-    // Check if screen is medium or large (greater than 767px)
     const isMediumOrLarger = window.innerWidth > 767;
 
-    // If footer is in view and not already in contact section, and screen is medium+
     if (isMediumOrLarger && isFooterInView() && current !== "contact") {
       current = "contact";
     }
@@ -441,22 +447,8 @@
 
   window.addEventListener("scroll", highlightNav);
   window.addEventListener("resize", highlightNav);
+  highlightNav();
 </script>
-
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  const showSection = urlParams.get('personal_info');
-
-  // If personal_info is not "1", remove all elements with class "personal_info"
-  if (showSection !== '1') {
-    document.querySelectorAll('.personal_info').forEach(el => el.remove());
-
-    // Also remove nav links that point to #personal_info
-    document.querySelectorAll('nav a[href="#personal_info"]').forEach(link => link.remove());
-  }
-</script>
-
-
 
 </body>
 </html>
